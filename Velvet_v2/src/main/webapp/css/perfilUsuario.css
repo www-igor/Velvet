@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  
+    .container-geral-header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      background-color: #00dac0;
+      padding: 0 30px;
+  
+      .box-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 80px;
+  
+        .logo {
+          width: 100%;
+        }
+      }
+  
+      .box-pesquisa {
+        display: flex;
+        justify-content: center;
+        width: 500px;
+  
+        input {
+          width: 100%;
+          border: none;
+          padding: 5px;
+          border-radius: 5px 0 0 5px;
+          outline: none;
+        }
+  
+        .box-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 35px;
+          background-color: #fff;
+          border: none;
+          cursor: pointer;
+          border-radius: 0 5px 5px 0;
+  
+          .icone-icone {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+  
+      .box-usuario {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100px;
+        gap: 10px;
+  
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          color: #fff;
+          font-size: 17px;
+        }
+        a:hover {
+          color: black;
+        }
+      }
+      .box-carrinho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+  
+        .icone-icone {
+          width: 50px;
+          height: 50px;
+          color: #fff;
+        }
+      }
+    }
+  
+    .box-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 50px;
+  
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+  
+        a {
+          text-decoration: none;
+          color: #00dac0;
+        }
+        a:hover {
+          color: black;
+        }
+      }
+    }
+  }
+
+
+.container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    height: 100vh;
+}
+
+.menu {
+    width: 150px;
+    height: 350px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+    flex-shrink: 0;
+}
+
+.conteudo {
+    flex-grow: 1; 
+    padding: 20px;
+    overflow-y: auto; 
+    min-height: 500px;   
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.conteudo-centro {
+    display: flex;
+    gap: 10px;
+}
+
+.conteudo-centro input[type="text"],
+.conteudo-centro input[type="date"],
+.conteudo-centro select {
+    flex: 1;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    color: #555;
+    font-size: 16px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+.select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    color: #555;
+    font-size: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #00dac0;
+    padding: 10px;
+  
+    .box-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 10px;
+  
+      .box-title-inp {
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        flex-direction: column;
+        width: 400px;
+        gap: 10px;
+  
+        h3 {
+          color: #fff;
+        }
+        .box-input {
+          display: flex;
+          width: 100%;
+  
+          input {
+            width: 100%;
+            height: 30px;
+            border: none;
+            outline: none;
+            background-color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 10px 0 0 10px;
+          }
+          button {
+            background-color: #000;
+            border: none;
+            color: #fff;
+            width: 40px;
+            height: 30px;
+            border-radius: 0 10px 10px 0;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+}
+
+.box-sobre {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 350px;
+
+    .cont-1 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 5px;
+
+      h2 {
+        color: #fff;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      a:hover {
+        color: #000;
+      }
+      h3 {
+        margin-top: 20px;
+        color: #fff;
+      }
+    }
+  }
+  .box-pagamentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    gap: 5px;
+
+    h3 {
+      color: #fff;
+    }
+
+    .image-pag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+
+      .img-cart {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+
+.box-redes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+
+  p {
+    color: #fff;
+    font-weight: bold;
+  }
+  .box-icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    gap: 20px;
+
+    .icon-icon {
+      width: 30px;
+      height: 30px;
+      color: #fff;
+    }
+    .icon-icon:hover {
+      color: #000;
+    }
+  }
+}
